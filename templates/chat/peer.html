@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<h5>patient - {{pat_name}}</h5>
+<h5>app no - {{apno}}</h5>
+<h5>doctor - {{doc_name}}</h5>
+    <!-- <script>
+        var numbTurnCredential = '{{numb_turn_credential}}';
+        var numbTurnUsername = '{{numb_turn_username}}';
+    </script> -->
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script type="text/javascript" src="{% static 'js/peer.js' %}"></script>
+    <p>{{msg}}<p>
+{% endblock %}
